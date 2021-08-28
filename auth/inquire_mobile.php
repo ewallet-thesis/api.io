@@ -11,16 +11,15 @@ class InquireMobile{
     const iv = 'helloworldhellow'; // 16 chars
     const method = 'aes-256-cbc';
     
-	public function __construct(){
-        echo "string";
-        // if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-        //     $this->_data = $data;
-        //     $this->_dataChecker();
-        // }else{
-        //     $retCode = "01";
-        //     $message = "method not allowed";
-        //     $this->_returnResponse($retCode, $message, null);
-        // }
+	public function __construct($data){
+        if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $this->_data = $data;
+            $this->_dataChecker();
+        }else{
+            $retCode = "01";
+            $message = "method not allowed";
+            $this->_returnResponse($retCode, $message, null);
+        }
     }
 
     //handles returning the response

@@ -58,7 +58,7 @@
         $response['routes'] = $routes;
         echo json_encode($response);
     }, null);
-    $route->add('/inquireMobile', 'InquireMobile');
+    $route->add('/inquireMobile', 'InquireMobile', $inputs);
     $route->add('/registration', 'Registration', $inputs);
     $route->add('/signIn', 'SignIn', $inputs);
     $route->add('/requestOTP', 'RequestOTP', $inputs);
