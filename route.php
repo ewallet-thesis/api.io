@@ -27,7 +27,6 @@ class Route
         {
             if (preg_match("#^$value$#", $uriGetParam))
             {
-                echo $this->_method[$key];
                 if(is_string($this->_method[$key])){
                     $useMethod = $this->_method[$key];
                     new $useMethod($this->_data != null ? $this->_data: null);
