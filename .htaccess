@@ -5,4 +5,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.+)$ index.php?uri=$1 [QSA,L]
 SetEnvIfNoCase Request_URI ^ / thumb.php no-gzip -vary
-ErrorDocument 404     /404.html
