@@ -12,14 +12,15 @@ class InquireMobile{
     const method = 'aes-256-cbc';
     
 	public function __construct($data){
-        if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $this->_data = $data;
-            $this->_dataChecker();
-        }else{
-            $retCode = "01";
-            $message = "method not allowed";
-            $this->_returnResponse($retCode, $message, null);
-        }
+        echo "string";
+        // if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+        //     $this->_data = $data;
+        //     $this->_dataChecker();
+        // }else{
+        //     $retCode = "01";
+        //     $message = "method not allowed";
+        //     $this->_returnResponse($retCode, $message, null);
+        // }
     }
 
     //handles returning the response
