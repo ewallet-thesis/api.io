@@ -18,8 +18,8 @@
     include "db_config/connection.php";
     include "common_components.php";
     include "auth/registration.php";
-    // include "auth/inquire_mobile.php";
-    // include "auth/inquire_email.php";
+    include "auth/inquire_mobile.php";
+    include "auth/inquire_email.php";
     // include "auth/sign_in.php";
     // include "auth/request_otp.php";
     // include "auth/validate_otp.php";
