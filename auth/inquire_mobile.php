@@ -11,7 +11,7 @@ class InquireMobile{
     const iv = 'helloworldhellow'; // 16 chars
     const method = 'aes-256-cbc';
     
-	public function __construct($data){
+	public function __construct(){
         echo "string";
         // if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         //     $this->_data = $data;
