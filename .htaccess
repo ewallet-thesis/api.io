@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteBase /mobileWallet/
 RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+RewriteBase /mobileWallet/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
