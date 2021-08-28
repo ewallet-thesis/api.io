@@ -20,9 +20,9 @@
     include "auth/registration.php";
     include "auth/inquire_mobile.php";
     include "auth/inquire_email.php";
-    // include "auth/sign_in.php";
-    // include "auth/request_otp.php";
-    // include "auth/validate_otp.php";
+    include "auth/sign_in.php";
+    include "auth/request_otp.php";
+    include "auth/validate_otp.php";
     // include "auth/save_answers.php";
     // include "auth/security_questions.php";
     include "auth/validate_answer.php";
